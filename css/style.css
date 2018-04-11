@@ -8,6 +8,7 @@ body * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -55,6 +56,11 @@ footer span {
 	font-weight: bold;
 }
 
+.main-nav a:hover,
+.footer-nav a:hover {
+ 	text-decoration: underline;
+ }
+
  .main-nav {
  	text-transform: uppercase;
  	text-align: center;
@@ -73,6 +79,10 @@ footer span {
  	background-color: #fff;
  	margin-bottom: 5px;
  	cursor: pointer;
+ }
+
+ .profile-text {
+ 	color: #ff0000;
  }
 
  .portfolio-wrapper {
@@ -137,6 +147,22 @@ footer span {
 	display: none;
 }
 
+.skills-wrapper {
+	background-color: #000;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.skills-wrapper * {
+	color: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.skills-wrapper img {
+	margin-bottom: 20px;
+}
+
  @media (min-width: 768px) {
 
  	.main-nav li {
@@ -151,8 +177,8 @@ footer span {
  	}
 
  	.profile-wrapper {
- 		padding-right: 15px;
- 		padding-left: 15px;
+ 		padding-right: 5px;
+ 		padding-left: 5px;
  	}
 
  	.profile-wrapper img {
@@ -164,15 +190,13 @@ footer span {
  	}
 
  	.portfolio-item {
+ 		float: left;
  		display: inline-block;
- 		max-width: 49%;
- 		padding-right: 5px;
+ 		max-width: 50%;
+ 		padding-right: 10px;
+ 		padding-left: 10px;
  	}
 
- 	.portfolio-item:nth-child(odd) {
- 		padding-left: 5px;
- 		padding-right: 0;
- 	}
 
  	.portfolio-item p {
  		padding-right: 40px;
@@ -219,8 +243,13 @@ footer span {
  	}
 
  	.portfolio-wrapper {
- 		padding-left: 30px;
+ 		padding-left: 20px;
+ 		padding-right: 20px;
+ 	}
+
+ 	.profile-wrapper {
  		padding-right: 30px;
+ 		padding-left: 30px;
  	}
 
  	.profile-wrapper img {
@@ -228,9 +257,7 @@ footer span {
  	}
 
  	.portfolio-item {
- 		max-width: 33%;
- 		padding-right: 20px;
- 		padding-left: 0;
+ 		max-width: 33.33%;
  	}
 
  	.nav-container {
