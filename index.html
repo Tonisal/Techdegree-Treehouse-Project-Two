@@ -3,23 +3,27 @@
 	<head>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
-	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="page-wrapper">
-			<h1>Headline</h1>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#" id="portfolio">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-				<figure>
-					<img src="images/responsive-layout-profile.png" class="profile-image">
-					<figcaption>Hi! I´m a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
-					</figcaption>
-				</figure>
+			<header>
+				<div class="nav-container clearfix">
+					<h1>Markus Bressel</h1>
+					<nav class="main-nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#portfolio" id="portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="profile-wrapper clearfix">
+					<img src="images/responsive-layout-profile.png">
+					<p>Hi! I´m a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
+					</p>
+				</div>
+			</header>
 			<div class="portfolio-wrapper" id="portfolio">
 				<h2>Portfolio</h2>
 				<div class="portfolio-item">
@@ -52,10 +56,25 @@
 						<h3>Calculator</h3>
 						<p>Someone can enter the numbers they want, and press the big blue button and get the result.</p>
 				</div>
-
-
-
 			</div>
+			<footer>
+				<h2 id="contact">Contact</h2>
+				<p>If you´re interested in chatting or want more information about what I´ve been working on, I´d love to hear from you!</p>
+				<ul>
+					<li>Phone<span>+1&nbsp;(111)&nbsp;555-1234</span></li>
+					<li>Email<span>email@yoursite.com</span></li>
+				</ul>
+				<hr>
+				<p class="text-left">Markus Bressel</p>
+				<a class="text-right to-top-link" href="#">Back to top</a>
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</div>
 	</body>
 </html> 
